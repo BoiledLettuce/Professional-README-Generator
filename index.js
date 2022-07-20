@@ -44,10 +44,10 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'repository',
-        message: 'What is your repos name?',
+        name: 'contribution',
+        message: 'What is your contribution guidelines?',
         validate: (value) => {
-            if (value) { return true } else { return 'Enter your repos name...'}
+            if (value) { return true } else { return 'Enter contribution guidelines...'}
         }
     },
     {
