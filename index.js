@@ -1,6 +1,11 @@
 // TODO: Include packages needed for this application
 
 const inquirer = require("inquirer");
+const fs = require('fs');
+const util = require('util');
+const emailValidator = require('email-validator');
+
+const generateMarkdown = require('./utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -54,7 +59,7 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'test',
+        name: 'testerino',
         message: 'What is test instructions?',
         validate: (value) => {
             if (value) { return true } else { return 'Enter test instructions...'}
@@ -71,7 +76,7 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'github_name',
+        name: 'github',
         message: 'What is your GitHub gamertag?',
         validate: (value) => {
             if (value) { return true } else { return 'Enter your username...'}
@@ -82,9 +87,11 @@ const questions = [
         name: 'github_email',
         message: 'What is email address for github?',
         validate: (value) => {
-            if (value) { return true } else { return 'Enter an email...'}
-        }
-    },
+            if (emailValidator.validate(value)) {
+                return true
+            } else { return 'Enter a valid email address'}
+        },
+    }
 ];
 
 // TODO: Create a function to write README file
