@@ -1,46 +1,43 @@
 
-  # Project Title
-  ![License Badge](https://img.shields.io/github/license/BoiledLettuce/Professional-README-Generator)
+  # README Generator
+  ![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)
 
-  ## Description
+  A command-line based application that generates a quick yet professional README.md file from a users input. This helps save precious time that could be better allocated to developing an application.
 
-  A descriptions
-
-  ## Table of Contents
-
-  * [Installation](#installation)
-  * [Usage](#usage)
-  * [Contribution](#contribution)
-  * [Tests](#tests)
-  * [Questions](#questions)
-  * [License](#license)
-  
   ## Installation
 
-  Instructions
-
+  1. Clone this repository
+  2. Node.js should be installed before running this application.
+  3. `npm install` required.
+  
   ## Usage
 
-  Usage Infomrations
+  * To invoke this application use the command:
 
-  ## Contribution
+    `node index.js`
 
-  Guideliness
-
-  ## Tests
-
-  Test Instructions
-
-  ## Questions
-
-  * Take a look at my [Github profile](https://github.com/BoiledLettuce)
-
-  * If you would like to contact me, [send an email](mailto:undefined).
-
-  ## License
-
-  Copyright (c) [BoiledLettuce](https://github.com/BoiledLettuce). All rights reserved.
-
-  Licensed under the GNU GPLv3 license.
-
+  * You will then be prompted with questions to create a pro README.
   
+  * Once all prompts have been completed, the README structure should look like:
+    * Description
+    * Table of Contents
+    * Installation
+    * Usage
+    * Contributions
+    * Tests
+    * Questions
+    * License
+
+    ![Example Image](./Assets/)
+
+    ![Video Demo]()
+
+    ## Features
+
+    * Javascript
+    * Node.js
+    * npm
+
+    ## License
+
+    Copyright (c) BoiledLettuce. All rights reserved.
