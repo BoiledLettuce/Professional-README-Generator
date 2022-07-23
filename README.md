@@ -28,7 +28,7 @@
     * Questions
     * License
 
-    ![Example Image](./Assets/)
+    ![Example Image](./Assets/Preview.JPG)
 
     ![Video Demo]()
 
